@@ -9,13 +9,7 @@ export interface IProductCard {
   time: string;
 }
 
-const ProductCard: React.FC<IProductCard> = ({
-  tag,
-  title,
-  body,
-  author,
-  time,
-}) => {
+const ProductCard: React.FC<IProductCard> = ({ tag, title, body, author, time }) => {
   return (
     <div className={styles.container}>
       <div className={styles.card}>
@@ -53,7 +47,4 @@ const ProductCard: React.FC<IProductCard> = ({
   );
 };
 
-export default {
-  title: 'components/ProductCard',
-  component: ProductCard,
-};
+export default ProductCard;
